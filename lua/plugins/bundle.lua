@@ -16,7 +16,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = true },
+  { "folke/trouble.nvim", enabled = false },
   {
     "windwp/nvim-ts-autotag",
     opts = {},

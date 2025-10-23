@@ -15,3 +15,6 @@ map("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" }) -- mo
 map("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" }) -- move line down(v)
 map("v", "<A-Left>", "<gv", { desc = "Dedent selection" }) -- Move selection left (dedent)
 map("v", "<A-Right>", ">gv", { desc = "Indent selection" }) -- Move selection right (indent)
+
+map("v", "<leader>y", ":'<,'>w !wl-copy<CR>", { silent = true, desc = "Yank to system clipboard" })
+map("n", "<leader>p", ":r !wl-paste<CR>", { silent = true, desc = "Paste from system clipboard" })
