@@ -1,16 +1,19 @@
 return {
   "stevearc/conform.nvim",
-  opts = function(_, opts)
-    -- safely extend the built-in formatter list
-    opts.formatters_by_ft = vim.tbl_extend("force", opts.formatters_by_ft or {}, {
-      lua = { "stylua" },
-      go = { "goimports", "gofmt" },
+  opts = {
+    formatters_by_ft = {
+      -- React/JS/TS files
       javascript = { "prettierd" },
-      css = { "prettierd" },
-      html = { "prettierd" },
+      javascriptreact = { "prettierd" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
+      -- Vue files
+      vue = { "prettierd" },
+      svelte = { "prettierd" },
+      -- Optional: Add others like CSS, JSON, etc., if needed
+      css = { "prettierd" },
       json = { "prettierd" },
-    })
-  end,
+      markdown = { "prettierd" },
+    },
+  },
 }
