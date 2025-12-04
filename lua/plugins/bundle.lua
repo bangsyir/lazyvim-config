@@ -6,13 +6,10 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = true },
-  { "folke/noice.nvim", enabled = false },
+  { "folke/noice.nvim", enabled = true },
   {
     "windwp/nvim-ts-autotag",
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
+    opts = {},
     lazy = true,
     event = "VeryLazy",
   },
