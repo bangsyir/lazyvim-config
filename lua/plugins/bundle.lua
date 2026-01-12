@@ -13,4 +13,10 @@ return {
     lazy = true,
     event = "VeryLazy",
   },
+  { "nvzone/volt", lazy = true },
+
+  {
+    "nvzone/minty",
+    cmd = { "Shades", "Huefy" },
+  },
 }

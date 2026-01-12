@@ -8,3 +8,6 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 -- Optional: to clearly mark the visual break
 vim.opt.showbreak = "↪"
+
+-- eslint
+vim.g.lazyvim_eslint_auto_format = true

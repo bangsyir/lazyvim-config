@@ -6,7 +6,7 @@ return {
     priority = 1000,
     opts = {
       -- Set the desired flavor (mocha is the default dark option)
-      flavour = "mocha",
+      flavour = "macchiato",
 
       -- *** CRITICAL: Enables transparent background for the main buffer ***
       transparent_background = true,
@@ -23,14 +23,15 @@ return {
         nvimtree = true,
         lsp_trouble = true,
         notify = true,
+        blink_cmp = true,
       },
-
       -- Optional: Set specific highlight styles
       styles = {
         comments = { "italic" },
       },
     },
   },
+
   {
     "LazyVim/LazyVim",
     opts = {

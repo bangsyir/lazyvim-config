@@ -18,3 +18,5 @@ map("v", "<A-Right>", ">gv", { desc = "Indent selection" }) -- Move selection ri
 
 map("v", "<leader>y", ":'<,'>w !wl-copy<CR>", { silent = true, desc = "Yank to system clipboard" })
 map("n", "<leader>p", ":r !wl-paste<CR>", { silent = true, desc = "Paste from system clipboard" })
+-- huefy
+map("n", "<A-t>", ":Huefy<CR>", { desc = "huefy color picker" })
