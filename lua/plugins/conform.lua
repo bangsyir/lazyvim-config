@@ -1,16 +1,31 @@
 return {
   "stevearc/conform.nvim",
   opts = {
+    formatters = {
+      eslint_d = {
+        command = "eslint_d",
+        args = { "--fix-to-stdout", "--stdin", "--stdin-filename", "$FILENAME" },
+        cwd = require("conform.util").root_file({
+          ".git",
+          "package.json",
+          ".eslintrc",
+          ".eslintrc.js",
+          ".eslintrc.cjs",
+          ".eslintrc.json",
+          "eslint.config.js",
+        }),
+        env = {
+          ESLINT_USE_FLAT_CONFIG = "true",
+        },
+      },
+    },
     formatters_by_ft = {
-      -- React/JS/TS files
-      javascript = { "prettierd" },
-      javascriptreact = { "prettierd" },
-      typescript = { "prettierd" },
-      typescriptreact = { "prettierd" },
-      -- Vue files
+      javascript = { "prettierd", "eslint_d" },
+      typescript = { "prettierd", "eslint_d" },
+      javascriptreact = { "prettierd", "eslint_d" },
+      typescriptreact = { "prettierd", "eslint_d" },
       vue = { "prettierd" },
       svelte = { "prettierd" },
-      -- Optional: Add others like CSS, JSON, etc., if needed
       css = { "prettierd" },
       json = { "prettierd" },
       markdown = { "prettierd" },

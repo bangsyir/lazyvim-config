@@ -10,4 +10,4 @@ vim.opt.breakindent = true
 vim.opt.showbreak = "↪"
 
 -- eslint
-vim.g.lazyvim_eslint_auto_format = true
+vim.g.lazyvim_eslint_auto_format = false
