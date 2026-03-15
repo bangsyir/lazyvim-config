@@ -5,7 +5,6 @@ return {
       eslint = { enabled = false },
       vtsls = { enabled = false },
       ts_ls = { enabled = false },
-      tsgo = {},
       -- lua_ls = {
       --   settings = {
       --     Lua = {
@@ -100,25 +99,25 @@ return {
       --   },
       -- },
     },
-    setup = {
-      -- Explicitly ensure tsgo is initialized correctly if not in lspconfig yet
-      tsgo = function(_, opts)
-        local configs = require("lspconfig.configs")
-        if not configs.tsgo then
-          configs.tsgo = {
-            default_config = {
-              cmd = { "tsgo", "--lsp", "--stdio" },
-              filetypes = {
-                "javascript",
-                "javascriptreact",
-                "typescript",
-                "typescriptreact",
-              },
-              root_dir = require("lspconfig.util").root_pattern("tsconfig.json", "package.json", ".git"),
-            },
-          }
-        end
-      end,
-    },
+    -- setup = {
+    --   -- Explicitly ensure tsgo is initialized correctly if not in lspconfig yet
+    --   tsgo = function(_, opts)
+    --     local configs = require("lspconfig.configs")
+    --     if not configs.tsgo then
+    --       configs.tsgo = {
+    --         default_config = {
+    --           cmd = { "tsgo", "--lsp", "--stdio" },
+    --           filetypes = {
+    --             "javascript",
+    --             "javascriptreact",
+    --             "typescript",
+    --             "typescriptreact",
+    --           },
+    --           root_dir = require("lspconfig.util").root_pattern("tsconfig.json", "package.json", ".git"),
+    --         },
+    --       }
+    --     end
+    --   end,
+    -- },
   },
 }
