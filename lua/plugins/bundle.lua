@@ -7,7 +7,7 @@ return {
 
   -- disable trouble
   { "folke/noice.nvim", enabled = true },
-  -- nvim-ts-autotag is already included via LazyVim typescript extras
+
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
