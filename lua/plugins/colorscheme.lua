@@ -2,7 +2,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = false, -- Load immediately at startup
+    lazy = true, -- Load immediately at startup
     priority = 1000,
     opts = {
       -- Set the desired flavor (mocha is the default dark option)
@@ -35,7 +35,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 }

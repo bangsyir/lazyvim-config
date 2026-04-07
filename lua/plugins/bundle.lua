@@ -7,13 +7,19 @@ return {
 
   -- disable trouble
   { "folke/noice.nvim", enabled = true },
+  -- nvim-ts-autotag is already included via LazyVim typescript extras
   {
-    "windwp/nvim-ts-autotag",
-    opts = {},
-    lazy = true,
-    event = "VeryLazy",
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = {
+      check_ts = true,
+      ts_config = {
+        typescript = { "string" },
+        javascript = { "string" },
+      },
+    },
   },
-  { "nvzone/volt", lazy = true },
+  -- { "nvzone/volt", lazy = true },
 
   {
     "nvzone/minty",
