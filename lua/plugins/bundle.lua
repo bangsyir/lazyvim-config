@@ -1,5 +1,6 @@
 return {
   {
+<<<<<<< HEAD
     "folke/trouble.nvim",
     -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
@@ -22,6 +23,8 @@ return {
   -- { "nvzone/volt", lazy = true },
 
   {
+=======
+>>>>>>> c328bd0 (new lazyvim setup)
     "nvzone/minty",
     cmd = { "Shades", "Huefy" },
   },

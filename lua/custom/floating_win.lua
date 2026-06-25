@@ -34,7 +34,11 @@ local function create_floating_window(opts)
     style = "minimal", -- Hide scrollbar, line numbers, and tabline
     focusable = true, -- Allow the window to be focused
     -- You can set a title:
+<<<<<<< HEAD
     title = "terminal@bangsyir",
+=======
+    title = "terminal@bashir",
+>>>>>>> c328bd0 (new lazyvim setup)
     title_pos = "center",
   }
 
@@ -59,7 +63,11 @@ end
 
 -- Example usage:
 -- Create a floating window with default dimensions
+<<<<<<< HEAD
 vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
+=======
+vim.api.nvim_create_user_command("FloatingTerminal", toggle_terminal, {})
+>>>>>>> c328bd0 (new lazyvim setup)
 -- Example usage 1: Create a default 80% window
 -- You can run this directly in Neovim with :lua create_centered_float()
 -- create_centered_float()

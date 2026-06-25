@@ -1,4 +1,5 @@
 return {
+<<<<<<< HEAD
   "stevearc/conform.nvim",
   opts = {
     formatters = {
@@ -30,5 +31,23 @@ return {
       json = { "prettierd" },
       markdown = { "prettierd" },
     },
+=======
+  {
+    "stevearc/conform.nvim",
+    opts = {
+
+      formatters_by_ft = {
+        javascript = { "prettier", "eslint" },
+        typescript = { "prettier", "eslint" },
+        javascriptreact = { "prettier", "eslint" },
+        typescriptreact = { "prettier", "eslint" },
+        vue = { "prettier", "eslint" },
+        svelte = { "prettier", "eslint" },
+        css = { "prettier" },
+        json = { "prettier" },
+        markdown = { "prettier" },
+      },
+    },
+>>>>>>> c328bd0 (new lazyvim setup)
   },
 }
