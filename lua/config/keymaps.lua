@@ -3,13 +3,9 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
-<<<<<<< HEAD
-map({ "n", "t" }, "<A-i>", "<cmd>Floaterminal<cr>", { desc = "Floating Terminal" })
-=======
 require("custom.floating_win")
 
 map({ "n", "t" }, "<A-i>", "<cmd>FloatingTerminal<cr>", { desc = "Floating Terminal" })
->>>>>>> c328bd0 (new lazyvim setup)
 
 -- normal mode
 map("n", "<A-Down>", "mz:m .+1<CR>==`z", { desc = "Move line down" })
@@ -22,12 +18,5 @@ map("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" }) -- move l
 map("v", "<A-Left>", "<gv", { desc = "Dedent selection" }) -- Move selection left (dedent)
 map("v", "<A-Right>", ">gv", { desc = "Indent selection" }) -- Move selection right (indent)
 
-<<<<<<< HEAD
-map("v", "<leader>y", ":'<,'>w !wl-copy<CR>", { silent = true, desc = "Yank to system clipboard" })
-map("n", "<leader>p", ":r !wl-paste<CR>", { silent = true, desc = "Paste from system clipboard" })
--- huefy
-map("n", "<A-t>", ":Huefy<CR>", { desc = "huefy color picker" })
-=======
 -- map("v", "<leader>y", ":'<,'>w !wl-copy<CR>", { silent = true, desc = "Yank to system clipboard" })
 -- map("n", "<leader>p", ":r !wl-paste<CR>", { silent = true, desc = "Paste from system clipboard" })
->>>>>>> c328bd0 (new lazyvim setup)

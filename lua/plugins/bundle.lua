@@ -1,30 +1,5 @@
 return {
   {
-<<<<<<< HEAD
-    "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
-    opts = { use_diagnostic_signs = true },
-  },
-
-  -- disable trouble
-  { "folke/noice.nvim", enabled = true },
-
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    opts = {
-      check_ts = true,
-      ts_config = {
-        typescript = { "string" },
-        javascript = { "string" },
-      },
-    },
-  },
-  -- { "nvzone/volt", lazy = true },
-
-  {
-=======
->>>>>>> c328bd0 (new lazyvim setup)
     "nvzone/minty",
     cmd = { "Shades", "Huefy" },
   },

@@ -1,17 +1,9 @@
 {
-  "extras": [
-<<<<<<< HEAD
-    "lazyvim.plugins.extras.ai.copilot",
-    "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.typescript",
-    "lazyvim.plugins.extras.lang.typescript.tsgo"
-=======
-
->>>>>>> c328bd0 (new lazyvim setup)
-  ],
+  "extras": [],
   "install_version": 8,
   "news": {
     "NEWS.md": "11866"
   },
   "version": 8
 }
+
