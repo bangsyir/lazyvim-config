@@ -8,7 +8,7 @@ return {
       -- opts.options.theme = "everforest"
       table.insert(opts.sections.lualine_x, {
         function()
-          return "😄"
+          return "󰣇"
         end,
       })
       opts.options.section_separators = { left = "", right = "" }

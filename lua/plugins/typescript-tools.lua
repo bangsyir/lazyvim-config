@@ -4,6 +4,22 @@ return {
   --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
   --   opts = {
   --     filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact" },
+  --     settings = {
+  --       separate_diagnostic_server = true,
+  --       publish_diagnostic_on = "insert_leave",
+  --       tsserver_max_memory = "auto",
+  --       code_lens = "off",
+  --       tsserver_plugins = {},
+  --       tsserver_logs = "off",
+  --       tsserver_file_preferences = {
+  --         includeInlayParameterNameHints = "none",
+  --         includeInlayFunctionParameterTypeHints = false,
+  --         includeInlayVariableTypeHints = false,
+  --         includeInlayFunctionLikeReturnTypeHints = false,
+  --         includeInlayEnumMemberValueHints = false,
+  --         includeInlayPropertyDeclarationTypeHints = false,
+  --       },
+  --     },
   --   },
   -- },
 }
