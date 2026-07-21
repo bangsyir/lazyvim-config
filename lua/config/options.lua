@@ -9,4 +9,8 @@ vim.opt.breakindent = true
 -- Optional: to clearly mark the visual break
 vim.opt.showbreak = "↪"
 
+-- Disable Neovim's Synchronized Rendering (termsync)
+vim.opt.termsync = false
+-- vim.opt.guicursor = ""
+
 vim.g.lazyvim_eslint_auto_format = true
