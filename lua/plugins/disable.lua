@@ -4,9 +4,9 @@ return {
     opts = {
       dashboard = { enabled = false },
       scroll = { enabled = false },
-      picker = {
-        icons = { files = { enabled = false } },
-      },
+      -- picker = {
+      --   icons = { files = { enabled = false } },
+      -- },
     },
   },
 }
